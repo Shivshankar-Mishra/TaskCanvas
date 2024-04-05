@@ -17,8 +17,8 @@ const Footer = () => {
   };
 
   return (
-    <footer className="mt-4 w-screen h-[593px] bg-[#141212] rounded-t-xl flex flex-col flex-wrap justify-center gap-16 md:gap-24">
-      <div className="flex flex-row flex-wrap justify-around items-start gap-10 md:gap-0">
+    <footer className="mt-4 w-screen md:w-[100%] h-[593px] bg-[#141212] rounded-t-xl flex flex-col flex-wrap justify-center items-center gap-16 md:gap-24">
+      <div className="w-[90vw] flex flex-row flex-wrap justify-around items-start gap-10 md:gap-0">
         <div className="flex flex-col justify-center md:justify-start items-center md:items-start gap-4">
           <h3 className="text-white text-[25px] font-bold">Pages</h3>
           <ul className="list-none flex flex-col justify-start items-center md:items-start gap-4">
@@ -85,7 +85,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center gap-1">
+      <div className="w-[90vw]  flex flex-col justify-center items-center gap-1">
         <p className="text-neutral-400 text-xl md:text-[22px] font-semibold">
           Developer: Shivshankar Mishra
         </p>

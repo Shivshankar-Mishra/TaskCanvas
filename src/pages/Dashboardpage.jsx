@@ -5,7 +5,7 @@ import Summary from "../components/Summary";
 
 const Dashboardpage = () => {
   return (
-    <div className="flex flex-col md:flex-row flex-wrap justify-around items-start gap-10 md:gap-0 mt-7 md:mt-10">
+    <div className="w-screen flex flex-col md:flex-row flex-wrap justify-center md:justify-around items-start gap-10 md:gap-0 mt-7 md:mt-10">
       <Summary />
       <Progress />
     </div>

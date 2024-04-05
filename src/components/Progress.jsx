@@ -24,8 +24,8 @@ const Progress = () => {
           </p>
         </div>
       </div>
-      <div className="w-screen md:w-[50vw] flex flex-col justify-center md:justify-start items-center md:items-start gap-5">
-        <div className="w-[90vw] h-[35vh] md:w-[794px] md:h-[270px] bg-blue-100 rounded-[30px] border-2 border-sky-500 flex flex-col justify-start items-start pt-3 pl-5 md:pl-10">
+      <div className="w-screen shrink-[2] md:w-auto flex flex-col justify-center md:justify-start items-center md:items-start gap-5">
+        <div className="w-[90vw] h-[35vh] md:w-[794px] md:h-[270px] shrink bg-blue-100 rounded-[30px] border-2 border-sky-500 flex flex-col justify-start items-start pt-3 pl-5 md:pl-10">
           <h2 className="text-black text-xl font-semibold">Pending Tasks</h2>
           <div className="w-[83vw] md:w-[730px] h-auto overflow-x-auto">
             {inProgressTasks.length > 0 ? (
@@ -43,7 +43,7 @@ const Progress = () => {
             )}
           </div>
         </div>
-        <div className="w-[90vw] h-[40vh] md:w-[794px] md:h-[275px] bg-blue-100 rounded-[30px] border-2 border-sky-500 flex flex-col justify-start items-start gap-1 pt-3 pl-5 md:pl-8">
+        <div className="w-[90vw] h-[40vh] md:w-[794px] md:h-[275px] shrink bg-blue-100 rounded-[30px] border-2 border-sky-500 flex flex-col justify-start items-start gap-1 pt-3 pl-5 md:pl-8">
           <h2 className="text-black text-xl font-semibold static">
             Pinned Sticky
           </h2>
@@ -55,7 +55,7 @@ const Progress = () => {
                 ))}
               </div>
             ) : (
-              <p className="w-[40%] md:w-[100%] text-black text-lg font-normal text-center my-10 py-5">
+              <p className=" md:w-[100%] text-black text-lg font-normal text-center my-10 py-5 px-4">
                 {stickyNotes.length === 0
                   ? "No sticky notes available."
                   : "No pinned sticky notes. Visit Sticky Page to pin StickyCard."}

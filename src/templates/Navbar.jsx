@@ -70,7 +70,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="flex flex-row justify-between items-start gap-3">
-        <div className="flex flex-row flex-wrap justify-center items-end gap-2 ">
+        {currentUser && (<div className="flex flex-row flex-wrap justify-center items-end gap-2 ">
           {!showSearchInput ? (
             <IoSearchOutline
               className="w-7 h-7 text-slate-600 hover:text-slate-900 cursor-pointer"
@@ -85,7 +85,7 @@ const Navbar = () => {
           <div className="hidden md:flex flex-row justify-center">
             {showSearchInput && <SearchBox />}
           </div>
-        </div>
+        </div>)}
         <div className="flex flex-row items-center">
           {currentUser && (
             <span className="text-slate-600 mr-2 md:flex hidden">
@@ -105,7 +105,7 @@ const Navbar = () => {
             />
           ) : (
             <CgProfile
-              className="w-7 h-7 text-slate-600 hover:text-slate-900"
+              className="w-7 h-7 text-slate-900"
               onClick={toggleProfileOverlay}
             />
           )}

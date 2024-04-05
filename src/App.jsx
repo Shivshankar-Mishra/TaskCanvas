@@ -39,7 +39,7 @@ function App() {
           {showMenu && <MenuOverlay />}
         </div>
         <div
-          className={`flex flex-row justify-center mt-8 ${
+          className={`w-screen flex flex-row justify-center mt-8 ${
             showSearchResult ? "flex" : "hidden"
           } `}
         >
@@ -50,7 +50,6 @@ function App() {
             <Route path="/" element={<Dashboardpage />} />
             <Route path="/task-page" element={<Todopage />} />
             <Route path="/sticky-page" element={<Stickypage />} />
-            {/* <Route path="/profile-page" element={<Profilepage />} /> */}
           </Routes>
         ) : (
           <SignInSignUp />
